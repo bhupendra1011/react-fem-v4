@@ -16,7 +16,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      cityState: "Seattle, WA",
+      location: "Seattle, WA",
       animal: "",
       breed: "",
       breeds: [],
@@ -29,7 +29,7 @@ class App extends React.Component {
 
   // lifting the state up to main component
   handleLocationChange = event => {
-    this.setState({ cityState: event.target.value });
+    this.setState({ location: event.target.value });
   };
   handleAnimalChange = event => {
     this.setState({ animal: event.target.value }, this.getBreeds);

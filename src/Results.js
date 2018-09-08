@@ -29,7 +29,7 @@ class Results extends React.Component {
     petfinder.pet
       .find({
         output: "full",
-        location: this.props.searchParams.cityState,
+        location: this.props.searchParams.location,
         animal: this.props.searchParams.animal,
         breed: this.props.searchParams.breed
       })

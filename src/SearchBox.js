@@ -18,7 +18,7 @@ class SearchBox extends React.Component {
                 <input
                   id="location"
                   placeholder="Location"
-                  value={context.cityState}
+                  value={context.location}
                   onChange={context.handleLocationChange}
                 />
               </label>
